@@ -2,7 +2,6 @@ const monday = window.mondaySdk();
 
 async function loadIframe() {
   try {
-    // Obtener contexto del ítem
     const contextRes = await monday.get("context");
     const itemId = contextRes.data?.itemId;
 
@@ -14,7 +13,6 @@ async function loadIframe() {
       return;
     }
 
-    // Hacer la consulta a la API de monday para obtener el valor de la columna
     const query = `
       query {
         items(ids: ${itemId}) {
