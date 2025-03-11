@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <title>Vista de Iframe desde Monday</title>
 
-  <!-- PRIMERO: Cargar el SDK de Monday -->
-  <script src="https://unpkg.com/monday-sdk-js/dist/monday-sdk.min.js"></script>
+  <!-- SDK de Monday debe ir PRIMERO -->
+  <script src="https://cdn.jsdelivr.net/npm/monday-sdk-js@1.4.0/dist/main.min.js"></script>
 
-  <!-- DESPUÉS: Tu script que usa el SDK -->
+  <!-- Tu archivo debe ir después -->
   <script src="monday.js" defer></script>
 
   <style>
@@ -15,7 +15,6 @@
       font-family: sans-serif;
       padding: 20px;
     }
-
     iframe {
       width: 100%;
       height: 600px;
